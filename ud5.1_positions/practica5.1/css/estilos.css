@@ -12,6 +12,7 @@ body {
 
 h1, h2 {
   text-align: center;
+  
 }
 
 img {
@@ -28,13 +29,13 @@ p {
 }
 
 #header {
-  margin-top: 35px;
+  margin-top: 0px;
   text-align: center;
   background-color: #FF9900;
   border-bottom: 5px solid #6599FF;
   border-top: 5px solid #6599FF;
   color: white;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 #content{
@@ -46,9 +47,10 @@ p {
   Punto 1: Barra de menu siempre estara 
   */
   /* necesitas 3 instrucciones*/
-  /*1: */
-  /*2: */
-  /*3: */
+  /*1: */position: fixed;
+  /*2: */width: 100%;
+  /*3: */top: 0;
+
   text-align: center;  
   background-color: #097054;
   border: 1px solid #FF9900;
@@ -72,8 +74,8 @@ p {
   Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
   */
   /* necesitas 2 instrucciones*/
-  /*1: */
-  /*2: */
+  /*1: */border-bottom: #6599FF solid 5px;
+  /*2: */background-color: #FF9900;
 }
 
 #footer{
@@ -81,9 +83,9 @@ p {
   Punto 6: Barra de pie de pagina siempre estara 
   */
   /* necesitas 3 instrucciones*/
-  /*1: */
-  /*2: */
-  /*3: */
+  /*1: */position: fixed;
+  /*2: */width: 100%;
+  /*3: */bottom: 0;
   
   background-color: #097054;
   text-align: center;
@@ -114,7 +116,7 @@ p {
  */
 
   /* necesitas 1 instruccion*/
-  /*1: */
+  /*1: */float: left;
   text-align: center;
   padding-bottom: 5px;
 }
@@ -125,7 +127,7 @@ p {
  */
 
   /* necesitas 1 instruccion*/
-  /*1: */
+  /*1: */float: right;
   text-align: center;
   padding-bottom: 5px;
 }
@@ -136,7 +138,7 @@ p {
  */
 
   /* necesitas 1 instruccion*/
-  /*1: */
+  /*1: */clear: left;
 }
 
 #imageToHide {
@@ -145,7 +147,7 @@ p {
  */
 
   /* necesitas 1 instruccion*/
-  /*1: */  
+  /*1: */float: left;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -160,10 +162,10 @@ p {
  */
 
   /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
-  /*1: */  
-  /*2: */    
-  /*3: */    
-  /*4: */    
+  /*1: */position: fixed;
+  /*2: */margin-top: 50px;  
+  /*3: */margin-right: 150px;
+  /*4: */margin-left: 150px;
   border:2px solid red;
   background-color: white;
   margin-bottom: 5px;
@@ -177,8 +179,8 @@ p {
  */
 
   /* necesitas 2 instruccion*/
-  /*1: */  
-  /*2: */  
+  /*1: */overflow-y: scroll;
+  /*2: */overflow-x: hidden;
   
   height: 250px;
   text-align: justify;
@@ -218,7 +220,7 @@ p {
     Punto 7.1: Barra de menu siempre estara 
     */
     /* necesitas 1 instruccion*/
-    /*1: */
+    /*1: */float: none;
     text-align: center;
     padding-bottom: 5px;
   }
@@ -228,7 +230,7 @@ p {
     Punto 7.1: Barra de menu siempre estara 
     */
     /* necesitas 1 instruccion*/
-    /*1: */
+    /*1: */float: none;
     text-align: center;
     clear: both;
   padding-bottom: 5px;
@@ -243,7 +245,7 @@ p {
     Punto 7.2: Barra de menu siempre estara 
     */
     /* necesitas 1 instruccion*/
-    /*1: */
+    /*1: */display: none;
 
     text-align: center;
     margin-bottom: 40px;
