@@ -11,9 +11,9 @@
 */
 
 body {
-    /* 1- color de fondo */
-    /* 2- ancho 90% */
-    /* 3- centrar */
+    /* 1- color de fondo */background-color: #333333;
+    /* 2- ancho 90% */width: 90%;
+    /* 3- centrar */margin: 0 auto;
 }
 
 .container {
@@ -21,10 +21,10 @@ body {
 }
 
 .youtuber, .footer, .header {
-    /* 4- color de fondo */
+    /* 4- color de fondo */background-color: #424242;
     border: 1px solid lightgray;
-    /* 5- redondear el borde */
-    /* 6- sombra */
+    /* 5- redondear el borde */border-radius: 10px;
+    /* 6- sombra */box-shadow: 10px lightgrey;
     margin: 10px auto;
     padding: 20px;
     text-align: center;    
@@ -70,10 +70,12 @@ body {
 
 #menu {
     /* 9- quita los puntos */
+    list-style-type: none;
 }
 
 li {
     /* 10- haz que los li no sean de tipo bloque */
+    display: inline;
     /* 11- borde izquierdo rojo */
     border-left: 4px red solid;
     /* 12- separa el borde de la izquierda */
@@ -82,11 +84,15 @@ li {
 
 #menu a {
     /* 13- enlaces blancos */
+    color: white;
     /* 14- sin subrayado */
+    text-decoration: none;
+    
 }
 
 #menu a:hover {
     /* 15- cambia el color al subrayado*/
+    text-decoration-color: #007BFF;
 }
 
 
@@ -104,16 +110,20 @@ li {
 }
 .button:hover {
     /* 16- cambia el color al boton*/
-}
+    background-color: #0056b3;
+}   
 
 @media all and (max-width: 700px) {
     .youtuber, .footer {
         /* 17- cambia el color al BORDE*/
+        border: 1px solid red;
     }
     .button {
-        /* 18- cambia el color al boton*/        
+        /* 18- cambia el color al boton*/
+        background-color: red;        
     }
     .button:hover {
         /* 19- cambia el color al boton*/
+        background-color: rgb(141, 12, 12);
     }    
 }
