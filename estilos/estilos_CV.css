@@ -1,0 +1,33 @@
+h1 { font-family: Verdana;
+}
+
+ul { font-family:'Courier New', Courier, monospace;
+}
+
+li { color: red;
+}
+
+a { color: red;
+}
+
+img { border: dashed 10px #FF9988;
+margin: 10px;
+}
+
+img:hover { border: solid 10px #FF0000;
+margin: 10px;
+}
+
+table { border: solid 5px #0000FF;
+margin: 20px;
+}
+
+td { border: solid 2px #00FF00;
+padding: 5px;
+}   
+
+tr { background-color: #FFFF88;
+}
+
+tr:hover { background-color: #FFDD00;
+}
