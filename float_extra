@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación Web</title>
+</head>
+<body>
+
+    <header id="menu-superior">
+        <nav>
+            <ul>
+                <li><a href="#">Button 1</a></li>
+                <li><a href="#">Button 2</a></li>
+                <li><a href="#">Button 3</a></li>
+                <li><a href="#">Button 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero-section">
+        <h1>Nombre de la Empresa</h1>
+    </section>
+
+    <div id="capa-cookies">
+        <div class="contenido-cookies">
+            <h2>Cookies EU</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget nisi sit amet dolor dapibus bibendum porttitor sit amet mi. Aliquam lacinia ultrices suscipit.</p>
+            <p>Sed vitae purus eget justo scelerisque vestibulum a quis purus. Integer sapien lacus, sollicitudin eget lobortis condimentum, efficitur duo dolor.</p>
+            <button onclick="this.parentElement.parentElement.style.display='none'">Close</button>
+        </div>
+    </div>
+
+    <main id="contenedor-principal">
+        
+        <section id="info-empresa">
+            <article class="capa-info img-derecha">
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis...</p>
+                </div>
+                <div class="imagen-placeholder">
+                    <img src="imagen1.jpg" alt="Imagen Derecha">
+                </div>
+            </article>
+
+            <article class="capa-info img-izquierda">
+                <div class="imagen-placeholder">
+                    <img src="imagen2.jpg" alt="Imagen Izquierda">
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis...</p>
+                </div>
+            </article>
+        </section>
+
+        <aside id="menu-lateral">
+            <ul>
+                <li><a href="#"><img src="phone-icon.png" alt="Teléfono"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+                <li><a href="#"><img src="google-icon.png" alt="Google Plus"></a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer id="pie-pagina">
+        <p>Footer - Información de la empresa</p>
+    </footer>
+
+</body>
+</html>
