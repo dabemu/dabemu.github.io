@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "dabemu.github.io",
+			"path": "../../dabemu.github.io"
+		},
+		{
+			"name": "ud5_2flexbox",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dabemu.github.io"
+	}
+}

@@ -1,0 +1,303 @@
+*{
+  margin: 0px auto;
+}
+
+body {
+  font-family: 'Coming Soon', cursive;
+  background-color: #696969;
+  
+}
+
+#header h1, #header h2 {
+  -webkit-text-stroke: 1.7px black;
+}
+
+h1, h2 {
+  text-align: left;
+  
+}
+
+img {
+  border: dashed 5px #ffffff;
+  margin: 10px;
+}
+
+ul {
+  color: white;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+#header {
+  margin-top: 0px;
+  background-image: url('./images/fondo.jpg');
+  border-bottom: 5px dashed #ffffff;
+  color: white;
+  padding-top: 30px;
+  height: 200px;
+  padding-left: 100px;
+}
+
+.redes-sociales {
+    position: fixed;   /* Lo fija a la pantalla */
+    right: 0;          /* Lo pega al borde derecho */
+    top: 50%;          /* Lo baja hasta la mitad de la pantalla */
+    transform: translateY(-50%); /* Lo centra perfectamente verticalmente */
+    background-color: #333; /* Fondo oscuro como en la imagen */
+    padding: 10px;
+    border-radius: 10px 0 0 10px; /* Redondea solo las esquinas de la izquierda */
+    z-index: 2000;     /* Asegura que esté por encima de todo */
+    height: 650px;
+    justify-content: center;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinea los iconos hacia abajo */
+    gap: 15px;             /* Espacio entre cada icono */
+}
+
+.redes-sociales img {
+    width: 30px; /* Iconos un poco más pequeños para evitar solapamiento */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2); /* Efecto de agrandado al pasar el mouse */
+}
+
+#menu {
+  /*
+  Punto 1: Barra de menu siempre estara 
+  */
+  /* necesitas 3 instrucciones*/
+  /*1: */position: fixed;
+  /*2: */width: 94.75%;
+  /*3: */top: 0;
+
+  text-align: center;  
+  background-color: #097054;
+  border-top:dashed 3px white;
+  border-bottom: dashed 3px white;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2em;
+}
+
+#menu a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#menu li{
+  display: inline;
+  padding-left: 5px;  
+}
+
+#menu li a:hover{
+  /*
+  Punto 1: Los enlaces cambian de color de fondo y estan subrayados de color azul
+  */
+  /* necesitas 2 instrucciones*/
+  /*1: */border-bottom: #6599FF solid 5px;
+  /*2: */background-color: #FF9900;
+}
+
+#footer{
+  /*
+  Punto 6: Barra de pie de pagina siempre estara 
+  */
+  /* necesitas 3 instrucciones*/
+  /*1: */position: fixed;
+  /*2: */width: 94.75%;
+  /*3: */bottom: 0;
+  
+  background-color: #097054;
+  text-align: center;
+  color: white;
+  border-top: 5px dashed rgb(255, 255, 255);
+  clear: both;
+}
+
+#footer a{
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #443266;
+  background-color: white;
+  text-decoration: none;
+}
+#image {
+  text-align: right;
+  margin-right: 60px;
+}
+
+
+#imageLeft {
+ /*
+  Punto 2: La capa de las imagenes debe aparecer a la izquierda de la pantalla
+ */
+
+  /* necesitas 1 instruccion*/
+  /*1: */float: left;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+#imageRight {
+ /*
+  Punto 2: La capa de las imagenes debe aparecer a la derecha de la pantalla
+ */
+
+  /* necesitas 1 instruccion*/
+  /*1: */float: right;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-right: 75px;
+}
+
+#textMain {
+/*
+  Punto 3: Para que la capa de la imagen y el float NO sigan la dinamica de la seccion anterior hay que romperla
+ */
+
+  /* necesitas 1 instruccion*/
+  /*1: */clear: left;
+  
+}
+
+#imageToHide {
+ /*
+  Punto 3: La capa de las imagenes debe aparecer a la izquierda de la pantalla
+ */
+
+  /* necesitas 1 instruccion*/
+  /*1: */float: left;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#textCookie {
+  text-align: center;
+}
+
+#cookieEU {
+ /*
+  Punto 4: La capa esta posicionada casi al centro de la pantalla. Se diferencia del menu y del footer en que NO se queda fija al hacer scroll de la pagina.
+ */
+
+  /* necesitas 4 instrucciones. 3 son distancia a los bordes :)*/
+  /*1: */position: fixed;
+  /*2: */margin-top: 50px;  
+  /*3: */margin-right: 150px;
+  /*4: */margin-left: 150px;
+  border:2px solid red;
+  background-color: white;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 50px black;
+}
+
+#textOverflow {
+
+  
+  height: 250px;
+  text-align: justify;
+  border: 1px dashed black;
+  background-color: #696969;
+  padding: 20px;
+  margin-right: 80px;
+  color: rgb(226, 226, 226);
+  border-radius: 30px 30px 30px 30px;
+  padding-right: 10px;
+  overflow: auto;
+}
+
+#textCentral {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px dashed black;
+  background-color: #696969;
+  margin: 20px 335px 75px 10px ;
+  border-radius: 30px 30px 30px 30px ; 
+  color: rgb(226, 226, 226)
+}
+
+.button {
+  	background-color: #097054; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media all and (max-width: 500px) {
+  #imageLeft {
+    /*
+    Punto 7.1: Barra de menu siempre estara 
+    */
+    /* necesitas 1 instruccion*/
+    /*1: */float: none;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  #imageRight {
+    /*
+    Punto 7.1: Barra de menu siempre estara 
+    */
+    /* necesitas 1 instruccion*/
+    /*1: */float: none;
+    text-align: center;
+    clear: both;
+  padding-bottom: 5px;
+  }
+  
+  #textCentral {
+    margin: 0px 0px ;
+  }
+  
+  #imageToHide {
+    /*
+    Punto 7.2: Barra de menu siempre estara 
+    */
+    /* necesitas 1 instruccion*/
+    /*1: */display: none;
+
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #textOverflow {
+    margin-right: 0px;
+  }
+  
+  #header {
+    margin-top: 50px;
+  }
+ 
+}
+
+@media all and (max-width: 300px) {
+  #header {
+    /*
+    Cambio el margen para que no lo tape el menu
+    */
+    margin-top: 100px;
+  }
+}
