@@ -1,4 +1,27 @@
+
+#listaParticipantes {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    width: 100%;
+}
 #panel {
     background-color: violet;
     color: white;
+    width: 45%;
+    border: 2px solid black;
+}
+
+#intermedio {
+    background-color: white;
+    color: black;
+    width: 10%;
+    border: 2px solid black;    
+}
+
+#solucion {
+    background-color: rgba(255, 255, 0, 0.575);
+    color: black;
+    width: 45%;
+    border: 2px solid black;
 }
