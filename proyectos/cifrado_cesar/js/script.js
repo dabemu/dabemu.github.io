@@ -1,3 +1,15 @@
+let frase=document.getElementById("frase")
+let numeroLetras=document.getElementById("numeroLetras")
+let botonCifrar=document.getElementById("botonCifrar")
+
+let solucion = "" 
+
+function renderSolucion(){
+    console.log("Frase cifrada: "+solucion)
+    fraseCifrada.innerHTML=""
+    fraseCifrada.innerHTML+=solucion
+}
+
 function cifradoCesar(texto, clave) {
     const alfabeto = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
     let resultado = "";
@@ -30,5 +42,8 @@ function cifradoCesar(texto, clave) {
     return resultado;
 }
 
-cifradoCesar("ABCD", 3);
-cifradoCesar("ABCD", -3);
+botonCifrar.addEventListener("click", (e)=>{
+    console.log("Voy a cifrar...")
+    solucion = cifradoCesar(frase.value, parseInt(numeroLetras.value))
+    renderSolucion()
+})

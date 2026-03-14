@@ -1,13 +1,30 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Cifrado César</title>
- <script src="js/app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <h1>Cifrado César</h1>
+    <div id="introducirFrase">
+    <form action="">
+        <label for="frase">Introduce la frase:</label>
+        <input type="text" id="frase" placeholder="Frase a cifrar">
+        <br>
+        <br>
+        <label for="numeroLetras">Número de letras a desplazar:</label>
+        <input type="number" id="numeroLetras" placeholder="Número de letras">
+        <input type="button" value="Cifrar" id="botonCifrar">
+    </form>
+    </div>
+
+    <div id="resultadoCifrado">
+        <h5>Frase cifrada:</h5>
+        <p id="fraseCifrada"></p>
+    <script src="js/script.js"></script>
+    </div>
+
 </body>
 </html>
